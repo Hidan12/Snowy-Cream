@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* estilo generales navegacion y footer */
+header{
+    display: flex;
+    width: 100%;
+    background-color: hotpink;
+    justify-content: space-between;
+}
+body header nav{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+body header .urlNav ul{
+    display: flex;
+}
+body header .urlNav ul li{
+    list-style: none;
+    margin-left: 15px;
+}
+.selectPage{
+    background-color: #ff1493;
+    border: 1px solid black;
+    border-radius: 50px;
+}
+body header .urlNav ul li a{
+    padding: 4px;
+    color: white;
+    text-decoration: none;
+}
+
+body header .logo img{
+    width: 50px;
+}
+
+body main{
+    background-color: #ffc9d2;
+}
+body main .title{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+body main .title h1{
+    font-size: 36px;
+}
+footer{
+    padding: 3vh;
+    text-align: center;
+    background-color: #ce929d;
+}
+footer p{
+    color: white;
+}
+
+
+/* estilos de home */
+
+
+body main .baner{
+    width: 100%;
+}
+body main .baner article{
+    width: 100%;
+}
+body main .baner article img{
+    width: 100%;
+    height: 28.8vh;
+    object-fit: cover;
+}
+
+body main .productHome{
+    margin-top: 35px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+body main .productHome article{
+    width: 40%;
+}
+
+body main .productHome .imgProduct img{
+    width: 60%;
+}
+
+/* stilos de la vista de About */
+
+.aboutPag .contAbout{
+    margin-top: 18px;
+    padding-bottom: 8px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutPag .contAbout .imgAbout{
+    width: 11vw;
+}
+.aboutPag .contAbout .imgAbout img{
+    object-fit: cover;
+    width: 57%;
+}
+.aboutPag .contAbout .description{
+    width: 40%;
+}
+
+/* estilos de vista contactos */
+.contact .contemInfo{
+    padding-top: 9vh;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: column
+}
+.contact .contemInfo article{
+    margin-bottom: 30px;
+    display: flex;
+    width: 40%;
+    flex-direction: column;
+    align-items: center;
+}
+.contact .contemInfo .imgInfo img{
+    width: 100%;
+    height: 32vh;
+}
+.contact .social{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 13vh;
+}
