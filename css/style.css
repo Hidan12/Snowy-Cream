@@ -136,3 +136,30 @@ body main .productHome .imgProduct img{
     justify-content: space-around;
     padding-bottom: 13vh;
 }
+
+/* estilos de beneficios */
+.benefitsTips{
+    padding-bottom: 5vh;
+}
+.contBenefits{
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    align-items: center;
+}
+.benefitsTips .benfits{
+    display: flex;
+    width: 100vh;
+    height: 30vh;
+    margin-bottom: 2vh;
+    border: 1px solid black;
+    align-items: center;
+}
+.benefitsTips .contBenefits .benfits .benefitsImg{
+    width: 40%;
+}
+.benefitsTips .contBenefits .benfits .benefitsImg img{
+    object-fit: cover;
+    width: 58%;
+    height: 21vh;
+}
