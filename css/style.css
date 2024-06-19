@@ -90,7 +90,7 @@ body main .baner {
 
 body main .baner img {
     width: 100%;
-    height: 11.8vh;
+    height: 18.8vh;
     object-fit: cover;
 }
 
@@ -114,7 +114,7 @@ body main .productHome .imgProduct img {
 }
 
 
-/* stilos de la vista de About */
+/* estilos de la vista de About */
 
 .aboutPag .contAbout {
     margin-top: 18px;
@@ -274,7 +274,7 @@ td {
 
 /* vistas de cell */
 
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 768px) {
     /* estilos generales tablets */
 
     body header {
@@ -293,6 +293,7 @@ td {
     }
 
     body header .urlNav ul {
+        padding: 0;
         display: flex;
         width: 100%;
         justify-content: space-around;
