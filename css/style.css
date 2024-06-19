@@ -1,196 +1,424 @@
-*{
+* {
     margin: 0;
     box-sizing: border-box;
 }
 
 /* estilo generales navegacion y footer */
-header{
+
+body header {
+    min-height: 20vh;
+    max-width: 100%;
     display: flex;
-    width: 100%;
-    background-color: hotpink;
-    justify-content: space-between;
-}
-body header nav{
-    width: 50%;
-    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: nowrap;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+    background-color: hotpink;
 }
 
-body header .urlNav ul{
-    display: flex;
+body header .logo {
+    width: 16vw;
+    height: 7%;
 }
-body header .urlNav ul li{
+
+body header .logo img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+body header .urlNav ul {
+    padding-left: 0;
+    padding-bottom: 5%;
+    text-align: center;
+}
+
+body header .urlNav ul li {
     list-style: none;
-    margin-left: 15px;
+    margin-bottom: 6%;
 }
-.selectPage{
+
+.selectPage {
     background-color: #ff1493;
     border: 1px solid black;
     border-radius: 50px;
 }
-body header .urlNav ul li a{
-    padding: 4px;
+
+body header .urlNav ul li a {
+    padding: 3px;
     color: white;
     text-decoration: none;
 }
 
-body header .logo img{
-    width: 50px;
-}
 
-body main{
+body main {
+    min-height: 70vh;
     background-color: #ffc9d2;
 }
-body main .title{
+
+body main .title {
     padding-top: 10px;
     padding-bottom: 10px;
     text-align: center;
 }
-body main .title h1{
-    font-size: 36px;
+
+body main .title h1 {
+    font-size: 20px;
 }
-footer{
+
+body main .title h2 {
+    font-size: 15px;
+}
+
+
+footer {
+    height: 10vh;
     padding: 3vh;
     text-align: center;
     background-color: #ce929d;
 }
-footer p{
+
+footer p {
     color: white;
 }
 
-
 /* estilos de home */
 
+body main .baner {
+    width: 100%;
+}
 
-body main .baner{
+body main .baner img {
     width: 100%;
-}
-body main .baner article{
-    width: 100%;
-}
-body main .baner article img{
-    width: 100%;
-    height: 28.8vh;
+    height: 11.8vh;
     object-fit: cover;
 }
 
-body main .productHome{
-    margin-top: 2.6vh;
+body main .productHome {
+    margin-top: 6.6vh;
     padding-bottom: 2.6vh;
     display: flex;
     width: 100%;
     align-items: center;
     justify-content: space-around;
-}
-body main .productHome article{
-    width: 40%;
+    flex-direction: column-reverse;
 }
 
-body main .productHome .imgProduct img{
-    width: 60%;
+body main .productHome article {
+    width: 58%;
 }
+
+body main .productHome .imgProduct img {
+    width: 100%;
+    height: 100%;
+}
+
 
 /* stilos de la vista de About */
 
-.aboutPag .contAbout{
+.aboutPag .contAbout {
     margin-top: 18px;
     padding-bottom: 8px;
     display: flex;
     width: 100%;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
-.aboutPag .contAbout .imgAbout{
-    width: 11vw;
+.aboutPag .contAbout .imgAbout {
+    width: 36vw;
 }
-.aboutPag .contAbout .imgAbout img{
+
+.aboutPag .contAbout .imgAbout img {
     object-fit: cover;
     width: 57%;
 }
-.aboutPag .contAbout .description{
+
+.aboutPag .contAbout .description {
     width: 40%;
 }
 
-/* estilos de vista contactos */
-.contact .contemInfo{
+
+/* estilos de contact */
+
+.contact .contemInfo {
     padding-top: 9vh;
     display: flex;
     width: 100%;
     align-items: center;
     flex-direction: column
 }
-.contact .contemInfo article{
+
+.contact .contemInfo article {
     margin-bottom: 30px;
     display: flex;
-    width: 40%;
+    width: 60%;
     flex-direction: column;
     align-items: center;
 }
-.contact .contemInfo .imgInfo img{
+
+.contact .contemInfo .imgInfo img {
     width: 100%;
     height: 32vh;
 }
-.contact .social{
+
+.contact .social {
     display: flex;
     justify-content: space-evenly;
     padding-bottom: 13vh;
-}
-
-/* estilos de beneficios */
-.benefitsTips{
-    padding-bottom: 5vh;
-}
-.contBenefits{
-    display: flex;
     flex-direction: column;
-    align-content: flex-start;
     align-items: center;
 }
-.benefitsTips .benfits{
-    display: flex;
-    width: 58vw;
-    height: 30vh;
-    margin-bottom: 2vh;
-    border: 1px solid black;
-    align-items: center;
-}
-.benefitsTips .contBenefits .benfits .benefitsImg{
-    width: 40%;
-}
-.benefitsTips .contBenefits .benfits .benefitsImg img{
-    object-fit: cover;
-    margin-left: 3vh;
-    width: 58%;
-    height: 21vh;
-}
 
-/* estilos de informacion */
+/* estilos de information */
 
-.information .contTable{
+.information .contTable {
     padding-bottom: 4.5vh;
     padding-top: 4.5vh;
     display: flex;
     justify-content: space-around;
 }
 
-.information .contTable table{
+.information .contTable table {
     border-collapse: collapse;
     padding-top: 3.5vh;
     padding-bottom: 3.5vh;
     width: 75vw;
-    
+
 }
-.information .contTable table tr td{
+
+.information .contTable table tr td {
     text-align: center;
     border-bottom: hidden;
 }
-.information .contTable table tr th, td{
+
+.information .contTable table tr th,
+td {
     border: 1px solid black;
-    padding: 6vh;
+    padding: 3vh;
     margin: 0;
 }
-.information .contTable table tr .tableSpecial{
+
+.information .contTable table tr .tableSpecial {
     border-bottom: 1px solid black;
 }
+
+
+/* estilos de beneficios */
+
+.benefitsTips {
+    padding-bottom: 5vh;
+}
+
+.contBenefits {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    align-items: center;
+}
+
+.benefitsTips .benfits {
+    display: flex;
+    width: 58vw;
+    height: 50vh;
+    margin-bottom: 2vh;
+    border: 1px solid black;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.benefitsTips .contBenefits .benfits .benefitsImg {
+    width: 53%;
+}
+
+.benefitsTips .contBenefits .benfits .benefitsImg img {
+    object-fit: cover;
+    width: 100%;
+    height: 21vh;
+}
+
+
+/* estilos de Raffle */
+
+.contRaffle {
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+}
+
+.contRaffle .contMap {
+    display: flex;
+    width: 80%;
+    height: 40vh;
+    padding-bottom: 9%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contRaffle .contMap iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.contRaffle .contForm {
+    padding-bottom: 9%;
+}
+
+.contRaffle .contForm .inputs {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* vistas de cell */
+
+@media screen and (min-width: 720px) {
+    /* estilos generales tablets */
+
+    body header {
+        min-height: 14vh;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    body header .logo {
+        width: 10vw;
+        height: 7%;
+    }
+
+    body header .urlNav {
+        width: 50%;
+    }
+
+    body header .urlNav ul {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    body main {
+        min-height: 76vh;
+    }
+
+    /* estilos de home */
+    body main .baner img {
+        height: 28.8vh
+    }
+
+    /* esstilos de raffle */
+    .contRaffle .contMap{
+        height: auto;
+    }
+    .contRaffle .contMap iframe {
+        width: 80%;
+        height: 44vh;
+    }
+}
+
+
+/* vista de pc */
+
+@media screen and (min-width: 1024px) {
+
+    /* estilos generales */
+    body header {
+        min-height: 10vh;
+    }
+
+    body header .logo {
+        width: 6vw;
+    }
+
+    body header .urlNav {
+        width: 35%;
+    }
+    body main{
+        min-height: 80vh;
+    }
+
+    /* estilos home */
+    body main .productHome {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    body main .productHome article {
+        width: 40%;
+    }
+
+    body main .productHome .imgProduct img {
+        width: 60%;
+    }
+
+    /* estilos about */
+    .aboutPag .contAbout {
+        flex-direction: row;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .aboutPag .contAbout .imgAbout {
+        width: 11vw;
+    }
+
+    .aboutPag .contAbout .imgAbout img {
+        object-fit: cover;
+        width: 57%;
+    }
+
+    .aboutPag .contAbout .description {
+        width: 40%;
+    }
+
+    /* estilos de contact */
+
+    .contact .social {
+        flex-direction: row;
+    }
+
+    .information .contTable table tr th,
+    td {
+        padding: 5.8vh;
+    }
+
+    /* estilo de benefits */
+    .benefitsTips .benfits {
+        flex-direction: row;
+        width: 58vw;
+        height: 30vh;
+        margin-bottom: 2vh;
+        align-items: center;
+    }
+    .benefitsTips .contBenefits .benfits .benefitsImg{
+        width: 40%;
+    }
+    .benefitsTips .contBenefits .benfits .benefitsImg img{
+        margin-left: 3vh;
+        width: 58%;
+        height: 21vh;
+    }
+
+    /* estilos de raffle */
+
+    .contRaffle{
+        min-height: 67.5vh;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .contRaffle .contMap{
+        width: 30vw;
+        height: 52vh;
+    }
+    .contRaffle .contForm{
+        padding: 2vw;
+        border: 1px solid white;
+    }
+}
+
+
+

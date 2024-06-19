@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../img/IceCream1/icon.png" type="image/x-icon">
+    <title>Raffle</title>
+</head>
+
+<body>
+    <header>
+        <nav class="urlNav">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./aboutUs.html">about Us</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="./information.html">Information</a></li>
+                <li><a href="./benefitsTips.html">Benefits</a></li>
+                <li><a href="#" class="selectPage">Raffle</a></li>
+            </ul>
+        </nav>
+        <section class="logo">
+            
+            <img src="../img/IceCream1/logo.png" alt="">
+            
+        </section>
+    </header>
+    <main>
+        <section class="title">
+            <h1>Raffle</h1>
+            <h2>You can collaborate to hold an exhibition event and participate in a raffle to win an easel</h2>
+        </section>
+
+        <section class="contRaffle">
+            <div class="contMap">
+                <h4>Our location is locate at:</h4>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d211541.23925933742!2d-118.39945161694027!3d34.06100611442511!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c75ddc27da13%3A0xe22fdf6f254608f4!2sLos%20%C3%81ngeles%2C%20California%2C%20EE.%20UU.!5e0!3m2!1ses-419!2sco!4v1718423769430!5m2!1ses-419!2sco"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="contForm">
+                <form action="./show_data.html" method="get">
+                    <section>
+
+                        <div class="inputs">
+                            <label for="firstName">First Name</label>
+                            <input type="text" id="firstName" name="firstName">
+                        </div>
+                        <div class="inputs">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" id="lastName" name="lastName">
+                        </div>
+                        <div class="inputs">
+                            <label for="chooseMeet">Choose Meet or Zoom</label>
+                            <select name="chooseMeetOrZoom" id="chooseMeet">
+                                <option value="meet">Meet</option>
+                                <option value="zoom">Zoom</option>
+                            </select>
+                        </div>
+                        <div class="inputs">
+                            <label for="chooseDate">Choose Date</label>
+                            <input type="date" name="" id="chooseDate" name="chooseDate">
+                        </div>
+                    </section>
+                    <section>
+                        <h4>Payment Options</h4>
+                        <div class="circle">
+                            <div>
+                                <input type="radio" name="cash" id="cash">
+                                <label for="cash">Cash</label>
+                            </div>
+
+                            <div>
+                                <input type="radio" name="creditCard" id="creditCard">
+                                <label for="creditCard">Credit Card</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="debitCard" id="debitCard">
+                                <label for="debitCard">Debit Card</label>
+                            </div>
+
+                        </div>
+                    </section>
+                    <section>
+                        <h4>Message (Optional)</h4>
+                        <textarea name="menssage" id="message" maxlength="150"></textarea>
+                    </section>
+                    <div class="foot">
+                        <input type="checkbox" name="aceptTerm" id="conditions">
+                        <label for="conditions">I acept terms and carditions.</label>
+                        <button type="submit">Send</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+
+
+
+
+    </main>
+    <footer>
+
+        <p>Create By: Martin Vidan</p>
+    </footer>
+
+</body>
+
+</html>
